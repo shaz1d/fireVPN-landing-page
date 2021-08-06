@@ -22,3 +22,18 @@ menuBtn.onclick = function () {
   menuBtn.classList.toggle("open");
   navMenu.classList.toggle("show-menu");
 };
+
+// Swiper
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: "auto",
+  spaceBetween: 50,
+
+  navigation: {
+    nextEl: ".button-next",
+    prevEl: ".button-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
